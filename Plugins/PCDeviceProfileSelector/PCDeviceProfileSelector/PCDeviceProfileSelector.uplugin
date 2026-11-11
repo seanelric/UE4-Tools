@@ -21,8 +21,7 @@
 			"LoadingPhase": "PostConfigInit",
 			"WhitelistPlatforms" :
 			[
-				"Win64",
-				"Win32"
+				"Win64"
 			]
 		}
 	]
