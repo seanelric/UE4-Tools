@@ -6,5 +6,8 @@ Some custom tools.
 2.Material parameters cotrol volume(Blend based distance).
 
 ## PCDeviceProfileSelector.
-Model adaptation of windows platform.  
-Contains "Plugins/PCDeviceProfileSelector", "Config/Windows"
+Model adaptation of windows platform(Contains "Plugins/PCDeviceProfileSelector", "Config/Windows").
+
+Source of model benchmark data:
+https://www.cpubenchmark.net/CPU_mega_page.html
+https://www.videocardbenchmark.net/GPU_mega_page.html
