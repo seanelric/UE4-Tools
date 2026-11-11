@@ -5,11 +5,6 @@
 #include "CoreMinimal.h"
 #include "IDeviceProfileSelectorModule.h"
 
-enum EDeviceChipType {
-    CPU,
-    GPU,
-};
-
 class FPCDeviceProfileSelectorModule : public IDeviceProfileSelectorModule
 {
 public:
@@ -30,9 +25,4 @@ public:
      */
     virtual ~FPCDeviceProfileSelectorModule() {
     }
-
-private:
-    FString FindMatchingProfile(const FString DeviceChipName, const TCHAR* DeviceMarkSection,
-        const TCHAR* DeviceQualitySection, int32& OutQuality);
-    FString GetCleanedDeviceName(const FString Original, const EDeviceChipType ChipType);
 };
