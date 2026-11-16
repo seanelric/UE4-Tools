@@ -83,7 +83,7 @@ namespace
     FString CleanGPUName(const FString& Original)
     {
         static const std::regex GPUPattern(
-            R"(\((?:r|tm|c)\)|^\s*(?:(?:nvidia|amd|ati)\b\s*)+|\b(?:gpu|adapter|series)\b|[()])"
+            R"(\((?:r|tm|c)\)|^\s*(?:(?:nvidia|amd|ati)\b\s*)+|\b(?:gpu|adapter|series)\b|\b\d+(?:\.\d+)?\s*gb\b|[()])"
         );
 
         return CleanDeviceNameWithPattern(Original, GPUPattern);
